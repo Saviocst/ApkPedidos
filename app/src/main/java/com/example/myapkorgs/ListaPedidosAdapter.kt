@@ -28,7 +28,9 @@ class ListaPedidosAdapter(private val pedidos: List<Pedido>) : RecyclerView.Adap
     class ViewHolderPedidos(private val itemBinding: ProductItemMainBinding): RecyclerView.ViewHolder(itemBinding.root){
 
         fun vincula(pedido: Pedido){
+
             itemBinding.textName.text = pedido.cliente
+            itemBinding.textTipo.text = pedido.tipo
             itemBinding.textBoop.text = pedido.acabamento
             itemBinding.textElastico.text = pedido.cor
         }

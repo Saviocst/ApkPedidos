@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
@@ -14,21 +16,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
         tools:text="Nome/Cliente"/>
+
+    <TextView
+        android:id="@+id/textTipo"
+        android:text="@string/tipo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Tipo"/>
 
     <TextView
         android:id="@+id/textBoop"
         android:text="@string/acabamento_boop"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/textName"
+        app:layout_constraintTop_toBottomOf="@id/textTipo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         tools:text="Acabamento/Boop"/>
 
     <TextView
@@ -39,12 +46,6 @@
         app:layout_constraintTop_toBottomOf="@id/textBoop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         tools:text="Elastico/Cor"/>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

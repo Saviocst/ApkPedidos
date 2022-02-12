@@ -3,4 +3,11 @@
     <string name="nome_cliente">Nome</string>
     <string name="acabamento_boop">acabamento</string>
     <string name="cor_elastico">cor</string>
+    <string name="hint_nome">Nome/Cliente</string>
+    <string name="acabamento">Acabamento/Bopp</string>
+    <string name="elastico_cor">Cor/Elástico</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="hint_tipo">Tipo</string>
+    <string name="tipo">Tipo</string>
+    <string name="message_error">Preencha todo o Formulário!</string>
 </resources>
