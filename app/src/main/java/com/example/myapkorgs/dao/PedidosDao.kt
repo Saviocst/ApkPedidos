@@ -4,13 +4,23 @@ import com.example.myapkorgs.Pedido
 
 class PedidosDao {
 
-private val pedidos = mutableListOf<Pedido>()
-
     fun adiciona(pedido: Pedido){
         pedidos.add(pedido)
     }
 
     fun buscarTodos() : List<Pedido>{
         return pedidos.toList()
+    }
+
+    companion object{
+
+        private val pedidos = mutableListOf(
+            Pedido(
+                cliente = "Sávio",
+                acabamento = "Fosco",
+                cor = "Preto",
+                tipo = "Agenda")
+        )
+
     }
 }

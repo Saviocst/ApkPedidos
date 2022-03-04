@@ -1,13 +1,25 @@
 <resources>
+
+<!--Nome do Aplicativo-->
     <string name="app_name">My Apk Orgs</string>
-    <string name="nome_cliente">Nome</string>
-    <string name="acabamento_boop">acabamento</string>
-    <string name="cor_elastico">cor</string>
-    <string name="hint_nome">Nome/Cliente</string>
-    <string name="acabamento">Acabamento/Bopp</string>
-    <string name="elastico_cor">Cor/Elástico</string>
-    <string name="adicionar">Adicionar</string>
-    <string name="hint_tipo">Tipo</string>
-    <string name="tipo">Tipo</string>
+
+    <!-- Mensagens de Alerta   -->
     <string name="message_error">Preencha todo o Formulário!</string>
+    <string name="message_ok">Pedido adicionado com sucesso!</string>
+
+    <!--Hints-->
+    <string name="hint_tipo">Tipo</string>
+    <string name="url_image">Url</string>
+    <string name="tipo">Tipo</string>
+    <string name="acabamento">Acabamento/Bopp</string>
+    <string name="hint_nome">Nome/Cliente</string>
+    <string name="cor_elastico">cor</string>
+    <string name="acabamento_boop">acabamento</string>
+    <string name="nome_cliente">Nome</string>
+    <string name="elastico_cor">Cor/Elástico</string>
+
+    <!--Nome Botões-->
+    <string name="adicionar">Adicionar</string>
+    <string name="carregar_imagem">Caregar</string>
+
 </resources>

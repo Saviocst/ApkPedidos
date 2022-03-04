@@ -9,60 +9,90 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".FormularioActivity">
+        tools:context=".ui.activity.FormularioActivity">
+
+        <ImageView
+            android:id="@+id/edt_image_formulario"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/editedphoto1" />
 
 
         <EditText
             android:id="@+id/edtName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/borda_personalizada"
+            android:drawableStart="@drawable/ic_people"
+            android:drawablePadding="10dp"
             android:hint="@string/hint_nome"
+            android:textColorHint="@color/blue_sv"
             android:inputType="textCapWords"
-            android:maxLength="10"
+            android:maxLength="15"
+            android:padding="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/edt_image_formulario" />
+
 
         <EditText
             android:id="@+id/edtTipo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/borda_personalizada"
+            android:drawableStart="@drawable/ic_book"
+            android:drawablePadding="10dp"
             android:hint="@string/hint_tipo"
+            android:textColorHint="@color/blue_sv"
             android:inputType="textCapWords"
-            android:maxLength="10"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:maxLength="15"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="@id/edtName"
+            app:layout_constraintStart_toStartOf="@id/edtName"
             app:layout_constraintTop_toBottomOf="@id/edtName" />
+
 
         <EditText
             android:id="@+id/edtAcabamento"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/borda_personalizada"
+            android:drawableStart="@drawable/ic_acabamento"
+            android:drawablePadding="10dp"
             android:hint="@string/acabamento"
+            android:textColorHint="@color/blue_sv"
             android:inputType="textCapWords"
-            android:maxLength="10"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:maxLength="15"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="@id/edtName"
+            app:layout_constraintStart_toStartOf="@id/edtName"
             app:layout_constraintTop_toBottomOf="@id/edtTipo" />
+
 
         <EditText
             android:id="@+id/edtCor"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/borda_personalizada"
+            android:drawableStart="@drawable/ic_color"
+            android:drawablePadding="10dp"
             android:hint="@string/elastico_cor"
+            android:textColorHint="@color/blue_sv"
             android:inputType="textCapWords"
             android:maxLength="10"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="@id/edtName"
+            app:layout_constraintStart_toStartOf="@id/edtName"
             app:layout_constraintTop_toBottomOf="@id/edtAcabamento" />
+
 
         <Button
             android:id="@+id/btnAdicionar"
